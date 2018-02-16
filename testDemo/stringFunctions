@@ -1,0 +1,20 @@
+function ValidateEmail(mail)
+{
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))
+    {
+        return (true)
+    }
+    return (false)
+}
+
+function ASCOrder(string) {
+    return resultString = string.split('').sort().join(' ');
+
+}
+
+
+module.exports.ASCOrder = ASCOrder;
+module.exports.ValidateEmail = ValidateEmail;
+
+
+// export.default.module = module.exports.strFunction;
